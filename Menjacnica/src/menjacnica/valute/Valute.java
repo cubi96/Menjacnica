@@ -15,6 +15,7 @@ public class Valute {
 	}
 
 	public void setPunNaziv(String punNaziv) {
+		if(punNaziv==null)throw new RuntimeException("Pun naziv nije dobro unet");
 		this.punNaziv = punNaziv;
 	}
 
@@ -23,6 +24,7 @@ public class Valute {
 	}
 
 	public void setSkracenica(String skracenica) {
+		if(skracenica==null)throw new RuntimeException("Skracenica nije dobro uneta");
 		this.skracenica = skracenica;
 	}
 
@@ -31,6 +33,7 @@ public class Valute {
 	}
 
 	public void setDatumKursa(GregorianCalendar datumKursa) {
+		if(datumKursa==null)throw new RuntimeException("Datum nije dobro unet");
 		this.datumKursa = datumKursa;
 	}
 
@@ -39,6 +42,7 @@ public class Valute {
 	}
 
 	public void setGornjiKurs(double gornjiKurs) {
+		if(gornjiKurs==0)throw new RuntimeException("Gornji kurs nije dobro unet");
 		this.gornjiKurs = gornjiKurs;
 	}
 
@@ -47,6 +51,7 @@ public class Valute {
 	}
 
 	public void setSrednjiKurs(double srednjiKurs) {
+		if(srednjiKurs==0)throw new RuntimeException("Srednji kurs nije dobro unet");
 		this.srednjiKurs = srednjiKurs;
 	}
 
@@ -55,6 +60,7 @@ public class Valute {
 	}
 
 	public void setDonjiKurs(double donjiKurs) {
+		if(donjiKurs==0)throw new RuntimeException("Donji kurs nije dobro unet");
 		this.donjiKurs = donjiKurs;
 	}
 
